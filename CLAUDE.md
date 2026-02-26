@@ -15,7 +15,17 @@ PDF style cloning and resume generation tool. Extracts style profiles from exist
 
 ## System dependencies
 
-WeasyPrint requires pango: `brew install pango`
+WeasyPrint requires pango and gobject:
+
+```bash
+brew install pango
+```
+
+**macOS + uv note:** uv's standalone Python can't find Homebrew's native libs by default. For the `--engine weasyprint` CLI commands, either:
+- Set `DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib` before running
+- Or invoke via `python3 -c "from resumemaster.cli import main; main()"` instead of the `resumemaster` console script
+
+The PyMuPDF engine works without any extra setup.
 
 ## Architecture
 
