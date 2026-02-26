@@ -1,0 +1,54 @@
+[project]
+name = "resumemaster"
+version = "0.1.0"
+description = "PDF style cloning and resume generation tool"
+requires-python = ">=3.13"
+dependencies = [
+    "click",
+    "jinja2",
+    "pillow",
+    "pydantic>=2.0",
+    "pymupdf",
+    "scikit-image",
+    "weasyprint",
+]
+
+[project.scripts]
+resumemaster = "resumemaster.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "N",    # pep8-naming
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+    "RUF",  # ruff-specific rules
+]
+ignore = [
+    "RUF001",  # ambiguous unicode — intentional en/em dashes in resume content
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["resumemaster"]
+
+[tool.ty.environment]
+python-version = "3.13"
+
+[tool.ty.rules]
+# pymupdf lacks type stubs
+unresolved-attribute = "warn"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+{{ font_faces }}
+
+:root {
+  --accent: {{ css.accent_color }};
+  --text: {{ css.text_color }};
+  --muted: {{ css.muted_color }};
+  --name-size: {{ css.name_size }};
+  --heading-size: {{ css.heading_size }};
+  --subheading-size: {{ css.subheading_size }};
+  --body-size: {{ css.body_size }};
+  --caption-size: {{ css.caption_size }};
+  --line-height: {{ css.line_height }};
+  --section-gap: {{ css.section_gap }};
+  --paragraph-spacing: {{ css.paragraph_spacing }};
+}
+
+@page {
+  size: {{ css.page_width }} {{ css.page_height }};
+  margin: {{ css.margin_top }} {{ css.margin_right }} {{ css.margin_bottom }} {{ css.margin_left }};
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: '{{ css.font_body }}', sans-serif;
+  font-size: var(--body-size);
+  line-height: var(--line-height);
+  color: var(--text);
+}
+
+{% if css.has_sidebar == "true" %}
+.page-container {
+  display: grid;
+  grid-template-columns: {{ css.sidebar_width }} 1fr;
+  gap: 20pt;
+}
+
+.sidebar {
+  border-right: 0.5pt solid var(--muted);
+  padding-right: 10pt;
+}
+
+.sidebar .section-label {
+  font-family: '{{ css.font_heading }}', sans-serif;
+  font-size: calc(var(--heading-size) * 0.85);
+  color: var(--accent);
+  font-weight: 600;
+  border-top: 0.5pt solid var(--muted);
+  padding-top: 4pt;
+  margin-top: var(--section-gap);
+  margin-bottom: 4pt;
+}
+{% endif %}
+
+/* Header */
+.header {
+  margin-bottom: var(--section-gap);
+  {% if css.has_sidebar == "true" %}
+  grid-column: 1 / -1;
+  {% endif %}
+}
+
+.header h1 {
+  font-family: '{{ css.font_name }}', sans-serif;
+  font-size: var(--name-size);
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8pt;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4pt 16pt;
+  font-size: var(--body-size);
+}
+
+.contact-row .label {
+  font-weight: 700;
+  color: #000;
+}
+
+.contact-row .value {
+  color: var(--text);
+}
+
+.header-rule {
+  border: none;
+  border-top: 0.5pt solid var(--muted);
+  margin-top: 8pt;
+}
+
+/* Sections (non-sidebar layout) */
+{% if css.has_sidebar != "true" %}
+.section {
+  margin-top: var(--section-gap);
+}
+
+.section-title {
+  font-family: '{{ css.font_heading }}', sans-serif;
+  font-size: var(--heading-size);
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+  border-bottom: 0.5pt solid var(--muted);
+  padding-bottom: 2pt;
+  margin-bottom: 6pt;
+}
+{% endif %}
+
+/* Experience entries */
+.entry {
+  margin-top: var(--paragraph-spacing);
+}
+
+.entry-title {
+  font-family: '{{ css.font_heading }}', sans-serif;
+  font-size: var(--heading-size);
+  font-weight: 700;
+  color: #000;
+}
+
+.entry-company {
+  font-family: '{{ css.font_heading }}', sans-serif;
+  font-size: var(--subheading-size);
+  font-weight: 700;
+  color: #000;
+}
+
+.entry-meta {
+  font-size: var(--caption-size);
+  color: var(--muted);
+  margin-bottom: 4pt;
+}
+
+ul.bullets {
+  list-style: disc;
+  padding-left: 12pt;
+  margin-top: 2pt;
+}
+
+ul.bullets li {
+  margin-bottom: 2pt;
+  font-size: var(--body-size);
+}
+
+/* Skills */
+.skill-category {
+  margin-top: 6pt;
+}
+
+.skill-category .cat-name {
+  font-weight: 700;
+  font-size: var(--caption-size);
+  text-transform: uppercase;
+  color: #000;
+}
+
+.skill-category .cat-items {
+  font-size: var(--body-size);
+  color: var(--text);
+}
+
+/* Education */
+.edu-degree {
+  font-size: var(--body-size);
+  color: var(--text);
+}
+
+/* Languages, Publications, Certifications */
+.inline-list {
+  font-size: var(--body-size);
+}
+
+.pub-list {
+  list-style: disc;
+  padding-left: 12pt;
+}
+
+.pub-list li {
+  font-size: calc(var(--body-size) - 0.5pt);
+  margin-bottom: 2pt;
+}
+</style>
+</head>
+<body>
+
+{# --- HEADER --- #}
+<div class="header">
+  <h1>{{ data.contact.name }}</h1>
+  <div class="contact-row">
+    {% if data.contact.address %}
+    <span><span class="label">Address:</span> <span class="value">{{ data.contact.address }}</span></span>
+    {% endif %}
+    {% if data.contact.phone %}
+    <span><span class="label">Phone:</span> <span class="value">{{ data.contact.phone }}</span></span>
+    {% endif %}
+    {% if data.contact.email %}
+    <span><span class="label">Email:</span> <span class="value">{{ data.contact.email }}</span></span>
+    {% endif %}
+    {% if data.contact.linkedin %}
+    <span><span class="label">LinkedIn:</span> <span class="value">{{ data.contact.linkedin }}</span></span>
+    {% endif %}
+    {% if data.contact.github %}
+    <span><span class="label">GitHub:</span> <span class="value">{{ data.contact.github }}</span></span>
+    {% endif %}
+    {% if data.contact.website %}
+    <span><span class="label">Website:</span> <span class="value">{{ data.contact.website }}</span></span>
+    {% endif %}
+  </div>
+  <hr class="header-rule">
+</div>
+
+{# --- PROFILE --- #}
+{% if data.profile %}
+<div class="section">
+  <div class="section-title">Profile</div>
+  <p>{{ data.profile }}</p>
+</div>
+{% endif %}
+
+{# --- EXPERIENCE --- #}
+{% if data.experience %}
+<div class="section">
+  <div class="section-title">Work Experience</div>
+  {% for job in data.experience %}
+  <div class="entry">
+    <div class="entry-title">{{ job.title }}</div>
+    <div class="entry-company">{{ job.company }}</div>
+    <div class="entry-meta">{{ job.dates }}{% if job.location %}  |  {{ job.location | upper }}{% endif %}</div>
+    {% if job.bullets %}
+    <ul class="bullets">
+      {% for bullet in job.bullets %}
+      <li>{{ bullet }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{# --- SKILLS --- #}
+{% if data.skills %}
+<div class="section">
+  <div class="section-title">Skills</div>
+  {% for category, items in data.skills.items() %}
+  <div class="skill-category">
+    <span class="cat-name">{{ category | upper }}</span><br>
+    <span class="cat-items">{{ items | join("  |  ") }}</span>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{# --- EDUCATION --- #}
+{% if data.education %}
+<div class="section">
+  <div class="section-title">Education</div>
+  {% for edu in data.education %}
+  <div class="entry">
+    <div class="entry-title">{{ edu.institution }}</div>
+    <div class="edu-degree">{{ edu.degree }}</div>
+    <div class="entry-meta">{{ edu.dates }}{% if edu.location %}  |  {{ edu.location | upper }}{% endif %}</div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{# --- LANGUAGES --- #}
+{% if data.languages %}
+<div class="section">
+  <div class="section-title">Languages</div>
+  <p class="inline-list">
+    {% for lang in data.languages %}{{ lang.language }} ({{ lang.level }}){% if not loop.last %}  |  {% endif %}{% endfor %}
+  </p>
+</div>
+{% endif %}
+
+{# --- PUBLICATIONS --- #}
+{% if data.publications %}
+<div class="section">
+  <div class="section-title">Publications</div>
+  <ul class="pub-list">
+    {% for pub in data.publications %}
+    <li>{{ pub.text }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{# --- CERTIFICATIONS --- #}
+{% if data.certifications %}
+<div class="section">
+  <div class="section-title">Certifications</div>
+  <ul class="pub-list">
+    {% for cert in data.certifications %}
+    <li>{{ cert.name }}{% if cert.issuer %} — {{ cert.issuer }}{% endif %}{% if cert.date %} ({{ cert.date }}){% endif %}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+</body>
+</html>
