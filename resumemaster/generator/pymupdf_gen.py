@@ -78,7 +78,8 @@ class PyMuPDFGenerator(BaseGenerator):
             role = rs.role.value
 
             if font_path and Path(font_path).exists():
-                font_name = Path(font_path).stem
+                # Sanitize: PyMuPDF fontnames cannot contain spaces
+                font_name = Path(font_path).stem.replace(" ", "")
                 self._font_names[role] = (font_name, font_path)
                 self._font_objects[role] = pymupdf.Font(fontfile=font_path)
             else:
