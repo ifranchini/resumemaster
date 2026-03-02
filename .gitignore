@@ -8,5 +8,6 @@ build/
 .ruff_cache/
 uv.lock
 output/
+examples/*/output/
 *.pdf
 extracted_fonts/

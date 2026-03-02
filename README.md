@@ -118,20 +118,9 @@ Resume content is provided as a JSON file matching the `ResumeData` schema:
 
 The generic pipeline produces a flat single-column layout. For CVs with complex visual layouts (sidebars, photo placeholders, dot-rated skills, multi-column sections), use a standalone PyMuPDF script that hard-codes the target layout geometry.
 
-### Pablo Cartes CV (2021 layout)
+See `examples/` for concrete implementations. Each example contains a standalone generator script and a `resume_data.json` with sample content.
 
-```bash
-uv run python output/generate_pablo_cv.py
-```
-
-Produces `output/Pablo_Cartes_CV_Original_Style.pdf` — a single-page US Letter PDF replicating the 2021 creative layout:
-
-- Grey sidebar with abstract, education, dot-rated skills, awards
-- Right main area with professional experience, diplomas, consultancies
-- Header with initials circle, blue accent subtitles, contact block
-- Dark divider bar separating header from body
-
-To create a new dedicated script for a different CV, use `output/generate_pablo_cv.py` as a template. The pattern is:
+To create a new dedicated script for a different CV, follow this pattern:
 
 1. Analyze the original PDF layout (coordinates, fonts, colors, spacing)
 2. Define layout constants matching the original geometry

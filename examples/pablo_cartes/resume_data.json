@@ -1,0 +1,82 @@
+{
+  "contact": {
+    "name": "Pablo E. Cartes",
+    "address": "Victoria, BC, Canada",
+    "phone": "+1 250-986-7703",
+    "email": "pabloecartes@gmail.com"
+  },
+  "profile": "Master Distiller and Chemical Engineer with 12+ years in craft brewing and distilling. Currently leading spirits production at Driftwood Brewing Company — producing gin, whisky, liqueurs, and specialty spirits distributed across British Columbia. Published researcher evaluating 100+ yeast strains for novel spirit applications with UBC Wine Research Centre. Proven track record founding and operating a brewery, developing award-winning products, and consulting for craft producers across Chile, Argentina, and Canada.",
+  "experience": [
+    {
+      "title": "Master Distiller",
+      "company": "Driftwood Brewing Company (Driftwood Spirits)",
+      "dates": "2022 – Present",
+      "location": "Victoria, BC, Canada",
+      "bullets": [
+        "Lead all spirits production including Contact Gin, Parabola Gin, Nocino, Blueberry Liqueur, and Oyster Spirit for distribution across BC",
+        "Created \"Spirit Of The Deep,\" a bespoke single malt whisky anchoring the cocktail program at Fathom restaurant in Victoria",
+        "Developed \"The Mage\" — a 55% ABV cask-strength single malt aged in ex-bourbon and South American Malbec barrels with Belgian yeast",
+        "Co-authored peer-reviewed paper in FEMS Yeast Research evaluating 100+ Canadian yeast strains for novel new-make spirit applications (Jan 2026)",
+        "Collaborated with UBC Wine Research Centre on yeast-driven flavor diversification research to expand sensory diversity in Canadian whisky"
+      ]
+    },
+    {
+      "title": "Fermentation & Distillation Consultant",
+      "company": "Independent Practice",
+      "dates": "2016 – 2021",
+      "location": "Chile & Argentina",
+      "bullets": [
+        "Provided technical consulting on fermentation science, recipe development, and production optimization to 8+ craft beverage producers",
+        "Developed and formulated new products for clients including Boticario Bar (Buenos Aires), Quintal Distillery, and Punta Gruesa Brewing",
+        "Advised on pot still operations, yeast management, and quality control protocols for Chile Pot Still and Kayta Yeast Co.",
+        "Created award-winning mead recipes for Gunnlod Mead, contributing to BJCP Best Mead in Latin America recognition (2020)"
+      ]
+    },
+    {
+      "title": "Founder & Head Brewer",
+      "company": "Craft Brewery (Own Venture)",
+      "dates": "2012 – 2017",
+      "location": "Chile",
+      "bullets": [
+        "Founded and operated craft brewery, managing all operations from recipe development and production through sales and distribution",
+        "Developed innovative fermentation processes combining chemical engineering principles with traditional brewing techniques",
+        "Directed the USACH HomeBrewing Lab, mentoring chemical engineering students in practical fermentation science (2017)"
+      ]
+    },
+    {
+      "title": "Technical Commercial Advisor",
+      "company": "Alambiques Chile",
+      "dates": "2017 – 2018",
+      "location": "Chile",
+      "bullets": [
+        "Sold distillation equipment and provided technical consultancy on fermentation and distillation processes for small and medium producers",
+        "Delivered training workshops on pot still operation, spirit production, and essential oil extraction techniques"
+      ]
+    }
+  ],
+  "skills": {
+    "Distillation": ["Pot Still", "Column Still", "Gin Basket", "Whisky Production", "Botanical Extraction", "Spirit Maturation", "Barrel Aging", "Blending"],
+    "Fermentation & Brewing": ["Yeast Management", "Recipe Development", "Fermentation Kinetics", "Quality Control", "Sensory Evaluation", "Mashing", "All-Grain Brewing"],
+    "Production & Business": ["Process Optimization", "Production Planning", "Inventory Management", "Brand Development", "Regulatory Compliance", "HACCP", "GMP"],
+    "Science": ["Chemical Engineering", "Molecular Gastronomy", "Laboratory Analysis", "Thermodynamics", "Research & Publication"]
+  },
+  "education": [
+    {
+      "institution": "Universidad de Santiago de Chile (USACH)",
+      "degree": "Chemical Engineering",
+      "dates": "2005 – 2013",
+      "location": "Santiago, Chile"
+    }
+  ],
+  "languages": [
+    {"language": "Spanish", "level": "Native"},
+    {"language": "English", "level": "Professional Working Proficiency"}
+  ],
+  "publications": [
+    {"text": "Cartes, P.E., Cook, B., et al. \"Evaluating Canadian yeast strains for novel new-make spirit applications.\" FEMS Yeast Research, January 2026."}
+  ],
+  "certifications": [
+    {"name": "Science & Cooking: Molecular Gastronomy", "issuer": "HarvardX", "date": "2020"},
+    {"name": "Canvas Business Model Workshop", "issuer": "Pontifical Catholic University of Chile", "date": "2018"}
+  ]
+}
