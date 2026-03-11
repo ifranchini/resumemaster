@@ -34,12 +34,12 @@ PAGE_H = 792.0
 
 # Header region
 HEADER_TOP = 28
-HEADER_BOTTOM = 167
+HEADER_BOTTOM = 100
 
 # Sidebar
 SIDEBAR_LEFT = 11
 SIDEBAR_RIGHT = 230
-SIDEBAR_BG_TOP = 185  # grey background starts below divider bar
+SIDEBAR_BG_TOP = 118  # grey background starts below divider bar
 SIDEBAR_BG_BOTTOM = 784
 
 # Right main area
@@ -47,8 +47,8 @@ MAIN_LEFT = 243
 MAIN_RIGHT = 594
 
 # Divider bar
-BAR_Y_TOP = 167
-BAR_Y_BOTTOM = 172
+BAR_Y_TOP = 100
+BAR_Y_BOTTOM = 105
 
 # Page margins
 MARGIN_BOTTOM = 12
@@ -97,15 +97,12 @@ CONTENT = {
     "email": "pabloecartes@gmail.com",
     "address": "Victoria, BC, Canada",
     "abstract": (
-        "Master Distiller and Chemical Engineer with 12+ years in craft "
-        "brewing and distilling, and 10+ years teaching advanced math and "
-        "science. Led spirits production at Driftwood Brewing Company, "
-        "producing gin, whisky, liqueurs, and specialty spirits distributed "
-        "across British Columbia. Co-authored research evaluating 100+ yeast "
-        "strains for novel spirit applications with UBC Wine Research Centre. "
-        "Proven track record founding and operating a brewery, developing "
-        "award-winning products, and consulting for 12+ craft producers "
-        "across Chile, Argentina, Uruguay, and Canada."
+        "Chemical Engineer with 12+ years applying process engineering "
+        "to fermentation and distillation. Led Driftwood Spirits as "
+        "Distillery Manager. Proven track "
+        "record founding and operating a business in the craft beer "
+        "industry, developing award-winning products, and providing "
+        "technical consulting to craft producers across multiple countries."
     ),
     "education": {
         "degree": "Chemical Engineering",
@@ -113,11 +110,19 @@ CONTENT = {
         "dates": "2005 - 2013",
     },
     "skills": [
-        ("Science", 5),
-        ("Creativity", 5),
-        ("Management", 4),
-        ("English", 4),
-        ("Business", 4),
+        "Process Engineer",
+        "Lab Analysis",
+        "Chemical Engineering",
+        "Fermentation Science",
+        "Distillation Science",
+        "Production Management",
+        "Business Model Development",
+        "Molecular Gastronomy",
+        "Food & Beverages",
+    ],
+    "languages": [
+        ("English", "CEFR Level C1"),
+        ("Spanish", "Native"),
     ],
     "awards": [
         "ADC 2025 Gold Medal Contemporary Gin: Contact Gin",
@@ -125,28 +130,23 @@ CONTENT = {
         "BJCP Best Homebrew Mead in Latin America -- March 2020",
         "BJCP Best Homebrew Mead in Chile -- December 2018",
     ],
-    "languages": [
-        ("Spanish", "Native"),
-        ("English", "IELTS General 7.5, CEFR C1 Advanced Proficiency"),
-    ],
     "experience": [
         {
-            "title": "Master Distiller",
+            "title": "Distillery Manager",
             "company": "Driftwood Brewing Company (Driftwood Spirits)",
             "dates": "2022 - Feb 2026",
             "location": "Victoria, BC, Canada",
             "bullets": [
-                "Led production of 6+ spirits including Contact Gin, "
-                "Parabola Gin, Nocino, Blueberry Liqueur, and Oyster Spirit "
-                "for province-wide distribution across BC",
+                "Led production of multiple spirits for province-wide "
+                "distribution across British Columbia: Gins, Whiskies, Liquors",
                 "Created \"Spirit Of The Deep,\" a bespoke single malt whisky "
                 "anchoring the cocktail program at Fathom restaurant, "
                 "Hotel Grand Pacific, Victoria BC",
-                "Developed \"The Mage\" -- a 55% ABV cask-strength single malt "
-                "aged in ex-bourbon and South American Malbec barrels",
-                "Co-authored peer-reviewed paper in FEMS Yeast Research "
-                "evaluating 100+ Canadian yeast strains for novel new-make "
-                "spirit applications (Jan 2026)",
+                "Created \"The Mage\" -- a 55% ABV cask-strength single "
+                "malt whisky",
+                "Co-authored: Marr, A., Cartes, P.E., et al. \"Evaluating "
+                "Canadian yeast strains for novel new-make spirit "
+                "applications.\" FEMS Yeast Research, January 2026",
                 "Collaborated with UBC Wine Research Centre on yeast-driven "
                 "flavor diversification research for Canadian whisky",
             ],
@@ -155,33 +155,45 @@ CONTENT = {
             "title": "Fermentation & Distillation Consultant",
             "company": "Independent Practice",
             "dates": "2016 - 2021",
-            "location": "Chile, Argentina, Uruguay & Canada",
+            "location": "",
             "bullets": [
-                "Provided technical consulting on fermentation science, recipe "
-                "development, and production optimization to 12+ craft "
-                "producers between Chile, Argentina, Uruguay & Canada",
-                "Advised on pot still operations, yeast management, and QC "
-                "protocols for Alambiques Chile and Kayta Yeast Co.",
+                "Provided technical consulting on fermentation science, "
+                "recipe development, and production optimization to craft "
+                "producers",
+                "Advised on pot still operations, yeast management, and "
+                "quality control protocols",
                 "Created award-winning mead recipes, earning BJCP Best "
                 "Homebrew Mead in Latin America recognition (2020)",
                 "Directed the USACH HomeBrewing Lab, mentoring chemical "
-                "engineering students in practical fermentation science (2017)",
+                "engineering students in practical fermentation science "
+                "(2017 - 2018)",
             ],
         },
         {
-            "title": "Founder & Head Brewer",
+            "title": "Co-Founder & Brewery Manager",
             "company": "Cerveza Rumba",
             "dates": "2012 - 2017",
             "location": "Chile",
             "bullets": [
-                "Founded and operated craft brewery, managing all operations "
-                "from recipe development and production through distribution",
+                "Co-founded and operated a business in the craft brewing "
+                "industry, managing all operations from recipe development "
+                "and production through distribution",
                 "Developed innovative fermentation processes combining chemical "
                 "engineering principles with traditional brewing techniques",
             ],
         },
     ],
     "diplomas": [
+        {
+            "name": "Standard First Aid for Industry Level 1",
+            "issuer": "St John Ambulance",
+            "date": "2024",
+        },
+        {
+            "name": "Serving It Right",
+            "issuer": "Responsible Service BC",
+            "date": "2022",
+        },
         {
             "name": "Science & Cooking: Molecular Gastronomy",
             "issuer": "HarvardX",
@@ -194,48 +206,19 @@ CONTENT = {
         },
     ],
     "consultancies": [
-        "Boticario Bar (Argentina), 2020",
-        "Quintal Distillery, 2019",
-        "Punta Gruesa Brewing, 2017",
-        "Alambiques Chile, 2017",
-        "Kayta Yeast Co., 2016",
-        "Gunnlod Mead, 2017",
+        "Boticario Bar  |  Quintal Distillery  |  Punta Gruesa Brewing  |  "
+        "Alambiques Chile  |  Kayta Yeast Co.  |  Gunnlod Mead  |  "
+        "Millman Brewing  |  Cervero Brewing  |  Cerveza Vericcio  |  "
+        "Pociones Clandestinas",
     ],
     "other_activities": [
-        "Technical Commercial Advisor, Alambiques Chile (2017 - 2018). "
-        "Sold distillation equipment and provided technical consultancy "
-        "across Chile, Argentina & Uruguay",
+        "Sales of distillation equipment, Alambiques Chile (2017 - 2018)",
         "10+ years teaching Advanced Math & Science to students from "
         "High School through Chemical Engineering School",
-        "HomeBrewing Lab Director, Chemical Engineering Dept, USACH (2017)",
+        "HomeBrewing Lab Director, Chemical Engineering Dept, USACH (2017 - 2018)",
         "Speaker: \"Entrepreneurship in the beer industry.\" National Congress "
         "of Chemical Students, Universidad de Santiago (2016)",
-        "Real Estate Agent Assistant with over 1.5M USD in value of property sold "
-        "(Jan 2017 - Jun 2017)",
     ],
-    "technical_skills": {
-        "DISTILLATION": [
-            "Pot Still", "Column Still", "Gin Basket", "Whisky Production",
-            "Botanical Extraction", "Spirit Maturation", "Barrel Aging", "Blending",
-        ],
-        "FERMENTATION & BREWING": [
-            "Yeast Management", "Recipe Development", "Fermentation Kinetics",
-            "Quality Control", "Sensory Evaluation", "Mashing", "All-Grain Brewing",
-        ],
-        "PRODUCTION & BUSINESS": [
-            "Process Optimization", "Production Planning", "Inventory Management",
-            "Brand Development", "Regulatory Compliance", "HACCP", "GMP",
-        ],
-        "SCIENCE": [
-            "Chemical Engineering", "Molecular Gastronomy", "Laboratory Analysis",
-            "Thermodynamics", "Research & Publication",
-        ],
-    },
-    "publication": (
-        "Marr, A., Cartes, P.E., et al. \"Evaluating Canadian yeast strains "
-        "for novel new-make spirit applications.\" FEMS Yeast Research, "
-        "January 2026."
-    ),
 }
 
 
@@ -243,9 +226,11 @@ CONTENT = {
 # CV GENERATOR CLASS
 # =============================================================================
 class PabloCV:
-    def __init__(self):
+    def __init__(self, accent=BLUE, bar=BAR_COLOR):
         self.doc = pymupdf.open()
         self.page = None
+        self.accent = accent
+        self.bar = bar
         self._setup_fonts()
 
     def _setup_fonts(self):
@@ -305,7 +290,7 @@ class PabloCV:
     def _draw_divider_bar(self):
         """Draw the dark horizontal bar separating header from body."""
         rect = pymupdf.Rect(0, BAR_Y_TOP, PAGE_W, BAR_Y_BOTTOM)
-        self.page.draw_rect(rect, color=None, fill=BAR_COLOR)
+        self.page.draw_rect(rect, color=None, fill=self.bar)
 
     def _draw_sidebar_divider(self, y):
         """Draw a thin horizontal line in the sidebar to separate sections."""
@@ -322,74 +307,46 @@ class PabloCV:
     def _draw_header(self):
         """Draw the header: initials circle, name, subtitles, contact info."""
         # --- Initials circle (top-left) ---
-        cx, cy = 65, 80
+        cx, cy = 65, 65
         r = 42
         # Filled circle background
         self.page.draw_circle(
-            pymupdf.Point(cx, cy), r, color=BLUE, fill=WHITE, width=2.5
+            pymupdf.Point(cx, cy), r, color=self.accent, fill=WHITE, width=2.5
         )
         # Initials "P" and "C"
-        self._insert(cx - 20, cy + 10, "P", ARIAL_BOLD, 28, BLUE)
-        self._insert(cx + 5, cy + 10, "C", ARIAL_BOLD, 28, BLUE)
+        self._insert(cx - 20, cy + 10, "P", ARIAL_BOLD, 28, self.accent)
+        self._insert(cx + 5, cy + 10, "C", ARIAL_BOLD, 28, self.accent)
 
         # --- Name ---
         name_x = 130
-        self._insert(name_x, 60, CONTENT["name"], ARIAL_BOLD, NAME_SIZE, DARK)
+        self._insert(name_x, 48, CONTENT["name"], ARIAL_BOLD, NAME_SIZE, DARK)
 
         # --- Subtitles (blue) ---
-        self._insert(
-            name_x, 80, CONTENT["subtitle1"], ARIAL_BOLD, 16, BLUE
-        )
-        self._insert(
-            name_x, 96, CONTENT["subtitle2"], ARIAL_BOLD, 10, BLUE
-        )
+        self._insert(name_x, 66, CONTENT["subtitle1"], ARIAL_BOLD, 16, self.accent)
+        self._insert(name_x, 82, CONTENT["subtitle2"], ARIAL_BOLD, 10, self.accent)
 
-        # --- Contact block (right side of header) ---
-        contact_x = 130
-        contact_y = 115
+        # --- Contact info (right-aligned, next to name/title) ---
+        contact_x = 420
+        contact_y = 42
 
         # Phone
         self._insert(
-            contact_x, contact_y, "Phone:", ARIAL_BOLD, CONTACT_SIZE, DARK
+            contact_x, contact_y, CONTENT["phone"],
+            ARIAL_REGULAR, CONTACT_SIZE, DARK,
         )
-        label_w = self._text_width("Phone:  ", ARIAL_BOLD, CONTACT_SIZE)
-        self._insert(
-            contact_x + label_w,
-            contact_y,
-            CONTENT["phone"],
-            ARIAL_REGULAR,
-            CONTACT_SIZE,
-            DARK,
-        )
-        contact_y += 13
+        contact_y += 12
 
         # Email
         self._insert(
-            contact_x, contact_y, "Email:", ARIAL_BOLD, CONTACT_SIZE, DARK
+            contact_x, contact_y, CONTENT["email"],
+            ARIAL_REGULAR, CONTACT_SIZE, DARK,
         )
-        label_w = self._text_width("Email:  ", ARIAL_BOLD, CONTACT_SIZE)
-        self._insert(
-            contact_x + label_w,
-            contact_y,
-            CONTENT["email"],
-            ARIAL_REGULAR,
-            CONTACT_SIZE,
-            DARK,
-        )
-        contact_y += 13
+        contact_y += 12
 
         # Address
         self._insert(
-            contact_x, contact_y, "Address:", ARIAL_BOLD, CONTACT_SIZE, DARK
-        )
-        label_w = self._text_width("Address:  ", ARIAL_BOLD, CONTACT_SIZE)
-        self._insert(
-            contact_x + label_w,
-            contact_y,
-            CONTENT["address"],
-            ARIAL_REGULAR,
-            CONTACT_SIZE,
-            DARK,
+            contact_x, contact_y, CONTENT["address"],
+            ARIAL_REGULAR, CONTACT_SIZE, DARK,
         )
 
     # -------------------------------------------------------------------------
@@ -400,7 +357,7 @@ class PabloCV:
         y = y_start
         # Section heading
         self._insert(
-            SIDEBAR_LEFT + 12, y, "ABSTRACT", ARIAL_BOLD, SIDEBAR_HEADING_SIZE, BLUE
+            SIDEBAR_LEFT + 12, y, "ABSTRACT", ARIAL_BOLD, SIDEBAR_HEADING_SIZE, self.accent
         )
         y += 16
 
@@ -421,7 +378,7 @@ class PabloCV:
         y += 6
 
         self._insert(
-            SIDEBAR_LEFT + 12, y, "EDUCATION", ARIAL_BOLD, SIDEBAR_HEADING_SIZE, BLUE
+            SIDEBAR_LEFT + 12, y, "EDUCATION", ARIAL_BOLD, SIDEBAR_HEADING_SIZE, self.accent
         )
         y += 16
 
@@ -442,41 +399,47 @@ class PabloCV:
         return y + 4
 
     def _draw_skills(self, y_start):
-        """Draw the SKILLS section with dot ratings. Returns next y."""
+        """Draw the SKILLS section as a plain list. Returns next y."""
         y = y_start
         self._draw_sidebar_divider(y - 4)
         y += 6
 
         self._insert(
-            SIDEBAR_LEFT + 12, y, "SKILLS", ARIAL_BOLD, SIDEBAR_HEADING_SIZE, BLUE
+            SIDEBAR_LEFT + 12, y, "SKILLS", ARIAL_BOLD, SIDEBAR_HEADING_SIZE, self.accent
         )
-        y += 18
+        y += 16
 
-        max_dots = 5
-        for skill_name, rating in CONTENT["skills"]:
-            # Skill label
+        for skill_name in CONTENT["skills"]:
             self._insert(
-                SIDEBAR_LEFT + 12, y, skill_name, ARIAL_REGULAR, SKILL_LABEL_SIZE, DARK
+                SIDEBAR_LEFT + 14, y, "\u2022", ARIAL_REGULAR, SKILL_LABEL_SIZE, DARK
             )
-
-            # Dots (right-aligned in sidebar)
-            dots_x_start = SIDEBAR_RIGHT - 14 - (max_dots * (DOT_RADIUS * 2 + 4))
-            for i in range(max_dots):
-                dot_x = dots_x_start + i * (DOT_RADIUS * 2 + 4)
-                dot_y = y - DOT_RADIUS + 1
-                center = pymupdf.Point(dot_x, dot_y)
-                if i < rating:
-                    # Filled dot
-                    self.page.draw_circle(
-                        center, DOT_RADIUS, color=BLUE, fill=BLUE
-                    )
-                else:
-                    # Empty dot
-                    self.page.draw_circle(
-                        center, DOT_RADIUS, color=MEDIUM_GREY, fill=None, width=0.8
-                    )
-
+            self._insert(
+                SIDEBAR_LEFT + 24, y, skill_name, ARIAL_REGULAR, SKILL_LABEL_SIZE, DARK
+            )
             y += 16
+
+        return y + 2
+
+    def _draw_languages(self, y_start):
+        """Draw the LANGUAGES section in the sidebar. Returns next y."""
+        y = y_start
+        self._draw_sidebar_divider(y - 4)
+        y += 6
+
+        self._insert(
+            SIDEBAR_LEFT + 12, y, "LANGUAGES", ARIAL_BOLD, SIDEBAR_HEADING_SIZE, self.accent
+        )
+        y += 16
+
+        for lang, level in CONTENT["languages"]:
+            self._insert(
+                SIDEBAR_LEFT + 14, y, "\u2022", ARIAL_REGULAR, SKILL_LABEL_SIZE, DARK
+            )
+            self._insert(
+                SIDEBAR_LEFT + 24, y, f"{lang} -- {level}",
+                ARIAL_REGULAR, SKILL_LABEL_SIZE, DARK,
+            )
+            y += 14
 
         return y + 2
 
@@ -487,7 +450,7 @@ class PabloCV:
         y += 6
 
         self._insert(
-            SIDEBAR_LEFT + 12, y, "AWARDS", ARIAL_BOLD, SIDEBAR_HEADING_SIZE, BLUE
+            SIDEBAR_LEFT + 12, y, "AWARDS", ARIAL_BOLD, SIDEBAR_HEADING_SIZE, self.accent
         )
         y += 16
 
@@ -513,7 +476,7 @@ class PabloCV:
 
         # Section heading
         self._insert(
-            MAIN_LEFT, y, "Professional Experience", ARIAL_BOLD, MAIN_HEADING_SIZE, BLUE
+            MAIN_LEFT, y, "Professional Experience", ARIAL_BOLD, MAIN_HEADING_SIZE, self.accent
         )
         y += 20
 
@@ -528,7 +491,7 @@ class PabloCV:
             y += 14
 
             # Company + dates line
-            company_dates = f"{job['company']}  |  {job['dates']}"
+            company_dates = f"{job['company']}  |  {job['dates']}" if job.get("company") else job["dates"]
             self._insert(
                 MAIN_LEFT, y, company_dates, ARIAL_REGULAR, SMALL_SIZE, MEDIUM_GREY
             )
@@ -554,7 +517,7 @@ class PabloCV:
         y = y_start
         main_w = MAIN_RIGHT - MAIN_LEFT - 14
 
-        self._insert(MAIN_LEFT, y, "CERTIFICATIONS", ARIAL_BOLD, 11, BLUE)
+        self._insert(MAIN_LEFT, y, "CERTIFICATIONS", ARIAL_BOLD, 11, self.accent)
         y += 14
 
         for diploma in CONTENT["diplomas"]:
@@ -578,7 +541,7 @@ class PabloCV:
         main_w = MAIN_RIGHT - MAIN_LEFT - 14
 
         self._insert(
-            MAIN_LEFT, y, "OTHER ACTIVITIES", ARIAL_BOLD, 11, BLUE
+            MAIN_LEFT, y, "OTHER ACTIVITIES", ARIAL_BOLD, 11, self.accent
         )
         y += 14
 
@@ -743,9 +706,26 @@ class PabloCV:
     # -------------------------------------------------------------------------
     # Generate
     # -------------------------------------------------------------------------
+    def _draw_consultancies(self, y_start):
+        """Draw CONSULTANCIES section in the right column. Returns next y."""
+        y = y_start
+        main_w = MAIN_RIGHT - MAIN_LEFT - 14
+
+        self._insert(MAIN_LEFT, y, "CONSULTANCIES", ARIAL_BOLD, 11, self.accent)
+        y += 14
+
+        for item in CONTENT["consultancies"]:
+            lines = self._wrap(item, ARIAL_REGULAR, SMALL_SIZE, main_w)
+            for line in lines:
+                self._insert(
+                    MAIN_LEFT + 2, y, line, ARIAL_REGULAR, SMALL_SIZE, DARK
+                )
+                y += 10
+
+        return y + 4
+
     def generate(self, output_path):
-        """Generate the complete 2-page CV PDF."""
-        # ==== PAGE 1: Creative 2-column layout ====
+        """Generate the complete single-page CV PDF."""
         self.page = self.doc.new_page(width=PAGE_W, height=PAGE_H)
 
         # Background elements (drawn first so text overlays)
@@ -755,51 +735,49 @@ class PabloCV:
         # Header
         self._draw_header()
 
-        # Sidebar sections
-        sidebar_y = 200
+        # Sidebar sections — spread equally
+        sidebar_y = 130
         sidebar_y = self._draw_abstract(sidebar_y)
+        sidebar_y += 6
         sidebar_y = self._draw_education(sidebar_y)
+        sidebar_y += 6
         sidebar_y = self._draw_skills(sidebar_y)
+        sidebar_y += 6
+        sidebar_y = self._draw_languages(sidebar_y)
+        sidebar_y += 6
         self._draw_awards(sidebar_y)
 
-        # Right main area: Work Experience (takes full right column on page 1)
-        main_y = 190
+        # Right main area — spread sections evenly
+        main_y = 120
         main_y = self._draw_experience(main_y)
-
-        # If space remains on page 1 after experience, add certifications
-        # Push certifications toward the bottom of the page
-        if main_y < 720:
-            cert_y = max(main_y + 16, 665)
-            self._draw_certifications(cert_y)
-
-        # ==== PAGE 2: Full-width continuation ====
-        self.page = self.doc.new_page(width=PAGE_W, height=PAGE_H)
-
-        # Thin blue accent bar at top of page 2
-        self.page.draw_rect(
-            pymupdf.Rect(0, 0, PAGE_W, 4), color=None, fill=BLUE
-        )
-
-        p2_y = P2_MARGIN_TOP
-        p2_gap = 14
-        p2_y = self._draw_p2_technical_skills(p2_y) + p2_gap
-        p2_y = self._draw_p2_certs_consultancies(p2_y) + p2_gap
-        p2_y = self._draw_p2_publication(p2_y) + p2_gap
-        p2_y = self._draw_p2_other_activities(p2_y) + p2_gap
-        self._draw_p2_languages(p2_y)
+        main_y += 8
+        main_y = self._draw_certifications(main_y)
+        main_y += 8
+        main_y = self._draw_other_activities(main_y)
+        main_y += 8
+        self._draw_consultancies(main_y)
 
         # Subset fonts and save
         self.doc.subset_fonts()
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         self.doc.save(output_path, garbage=4, deflate=True)
         self.doc.close()
-        print(f"CV generated: {output_path} (2 pages)")
+        print(f"CV generated: {output_path} (1 page)")
 
 
 # =============================================================================
 # MAIN
 # =============================================================================
+PURPLE_ACCENT = (0.345, 0.161, 0.420)  # #582A6B
+PURPLE_BAR = (0.220, 0.110, 0.275)     # #381C46
+RED_ACCENT = (0.545, 0.133, 0.133)     # #8B2222
+RED_BAR = (0.361, 0.082, 0.082)        # #5C1515
+
 if __name__ == "__main__":
-    out = os.path.join(OUTPUT_DIR, "Pablo_Cartes_CV_Original_Style.pdf")
-    cv = PabloCV()
-    cv.generate(out)
+    # Purple version
+    out_purple = os.path.join(OUTPUT_DIR, "Pablo_Cartes_CV_Purple.pdf")
+    PabloCV(accent=PURPLE_ACCENT, bar=PURPLE_BAR).generate(out_purple)
+
+    # Red version
+    out_red = os.path.join(OUTPUT_DIR, "Pablo_Cartes_CV_Red.pdf")
+    PabloCV(accent=RED_ACCENT, bar=RED_BAR).generate(out_red)
