@@ -118,15 +118,30 @@ Resume content is provided as a JSON file matching the `ResumeData` schema:
 
 The generic pipeline produces a flat single-column layout. For CVs with complex visual layouts (sidebars, photo placeholders, dot-rated skills, multi-column sections), use a standalone PyMuPDF script that hard-codes the target layout geometry.
 
-See `examples/` for concrete implementations. Each example contains a standalone generator script and a `resume_data.json` with sample content.
+See `examples/` for concrete implementations. Each example contains a standalone generator script, a `resume_data.json` with sample content, and its own README.
 
-To create a new dedicated script for a different CV, follow this pattern:
+### Quick start — generate an example CV
+
+```bash
+uv run python examples/pablo_cartes/generate_cv.py
+```
+
+This produces two color variants in `examples/pablo_cartes/output/`:
+- `Pablo_Cartes_CV_Purple.pdf`
+- `Pablo_Cartes_CV_Red.pdf`
+
+See [`examples/pablo_cartes/README.md`](examples/pablo_cartes/README.md) for details and [`docs/operations.md`](docs/operations.md) for the full operational guide.
+
+### Creating a new dedicated script
+
+To create a dedicated script for a different CV, follow this pattern:
 
 1. Analyze the original PDF layout (coordinates, fonts, colors, spacing)
 2. Define layout constants matching the original geometry
-3. Hard-code content data at the top of the script
+3. Hard-code content data at the top of the script (or load from JSON)
 4. Build a generator class with methods for each visual section
-5. Validate with `resumemaster validate original.pdf generated.pdf`
+5. Accept color scheme parameters to generate variants
+6. Validate with `resumemaster validate original.pdf generated.pdf`
 
 ## Validation Scores
 
