@@ -185,6 +185,11 @@ CONTENT = {
     ],
     "diplomas": [
         {
+            "name": "Forklift Operator",
+            "issuer": "Victoria Industrial Safety Training",
+            "date": "2024",
+        },
+        {
             "name": "Standard First Aid for Industry Level 1",
             "issuer": "St John Ambulance",
             "date": "2024",
@@ -209,15 +214,16 @@ CONTENT = {
         "Boticario Bar  |  Quintal Distillery  |  Punta Gruesa Brewing  |  "
         "Alambiques Chile  |  Kayta Yeast Co.  |  Gunnlod Mead  |  "
         "Millman Brewing  |  Cervero Brewing  |  Cerveza Vericcio  |  "
-        "Pociones Clandestinas",
+        "Pociones Clandestinas  |  Alcedo Brewing",
     ],
     "other_activities": [
-        "Sales of distillation equipment, Alambiques Chile (2017 - 2018)",
-        "10+ years teaching Advanced Math & Science to students from "
-        "High School through Chemical Engineering School",
-        "HomeBrewing Lab Director, Chemical Engineering Dept, USACH (2017 - 2018)",
+        "Real Estate Agent Assistant with over 1.5M USD in property sales (2017 - 2018)",
+        "Sales of distillation equipment and technical support (2017 - 2018)",
         "Speaker: \"Entrepreneurship in the beer industry.\" National Congress "
         "of Chemical Students, Universidad de Santiago (2016)",
+        "10+ years teaching Advanced Math & Science to students from "
+        "High School through Chemical Engineering School",
+        "Trainee Engineer. AGROSUPER Sausages & Ham Factory (2012 - 2013)",
     ],
 }
 
